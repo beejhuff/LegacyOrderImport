@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Legacy Order Import
+ *
+ * @category    Guidance
+ * @package     Guidance_LegacyOrderImport
+ * @copyright   Copyright (c) 2015 Guidance Solutions
+ * @author      Guidance Magento Team <magento@guidance.com>
+ */
+-->
+<config>
+    <modules>
+        <Guidance_LegacyOrderImport>
+            <version>1.0.0</version>
+        </Guidance_LegacyOrderImport>
+    </modules>
+    <global>
+        <models>
+            <importexport>
+                <rewrite>
+                    <import>Guidance_LegacyOrderImport_Model_Import</import>
+                </rewrite>
+            </importexport>
+            <enterprise_importexport>
+                <rewrite>
+                    <import>Guidance_LegacyOrderImport_Model_Import</import>
+                </rewrite>
+            </enterprise_importexport>
+            <guidance_loi>
+                <class>Guidance_LegacyOrderImport_Model</class>
+                <resourceModel>guidance_loi_resource</resourceModel>
+            </guidance_loi>
+            <guidance_loi_resource>
+                <class>Guidance_LegacyOrderImport_Model_Resource</class>
+            </guidance_loi_resource>
+        </models>
+        <helpers>
+            <guidance_loi>
+                <class>Guidance_LegacyOrderImport_Helper</class>
+            </guidance_loi>
+        </helpers>
+        <importexport>
+            <import_entities>
+                <guidance_loi translate="label">
+                    <model_token>guidance_loi/import_entity_orderImport</model_token>
+                    <label>Legacy Orders</label>
+                </guidance_loi>
+            </import_entities>
+        </importexport>
+    </global>
+</config>

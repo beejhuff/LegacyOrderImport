@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Legacy Order Import
+ *
+ * @category    Guidance
+ * @package     Guidance_LegacyOrderImport
+ * @copyright   Copyright (c) 2015 Guidance Solutions
+ * @author      Guidance Magento Team <magento@guidance.com>
+ */
+-->
+<config>
+    <modules>
+        <Guidance_LegacyOrderImport>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Sales />
+                <Mage_ImportExport />
+            </depends>
+        </Guidance_LegacyOrderImport>
+    </modules>
+</config>
